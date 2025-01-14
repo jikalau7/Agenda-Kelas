@@ -1,0 +1,78 @@
+.table-container {
+    overflow-x: auto;  /* Untuk scroll horizontal */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabel */
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Gaya header tabel */
+.responsive-table thead {
+    background-color: #366ed8;
+    color: white;
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Gaya baris data */
+.responsive-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.responsive-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+    .select-container {
+        padding: 12px;
+        width: 90%;
+    }
+    .table-container{
+        max-height: 100vh;
+    }
+    .select-box {
+        font-size: 14px;
+    }
+    .responsive-table th, .responsive-table td {
+        padding: 10px;
+    }
+    thead{
+        display:none;
+    }
+    
+    .responsive-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        margin-bottom: 10px;
+    }
+    
+    .responsive-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .responsive-table tr {
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .edit-btn {
+        width: 100%;
+    }
+}
