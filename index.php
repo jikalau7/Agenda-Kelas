@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $_SESSION['username'] = $username;
 
     if($username == '' ){
-        $error = "Username $username tidak tersedia";
+        $error = "username $username tidak tersedia";
     }else if ($password == ''){
         $error = "password tidak sesuai";
     } 
