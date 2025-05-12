@@ -115,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>LOGIN</h2>
         <form method="POST" action="">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
